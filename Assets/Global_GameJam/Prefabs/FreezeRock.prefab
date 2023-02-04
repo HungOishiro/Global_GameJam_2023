@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 5052452234743068338, guid: d9578058aae292c4fb5964137dbde0b2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f2901efd8bb16bc408ad37f017fbf9bc, type: 3}
+      objectReference: {fileID: 21300000, guid: cb4ac34f9495c904d97b8fbc650303bf, type: 3}
     - target: {fileID: 5356872477531954215, guid: d9578058aae292c4fb5964137dbde0b2, type: 3}
       propertyPath: m_Name
       value: FreezeRock
@@ -62,6 +62,6 @@ PrefabInstance:
     - target: {fileID: 9126438715419373411, guid: d9578058aae292c4fb5964137dbde0b2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 43ad51e043491b94d8f6c62d55ac5ede, type: 3}
+      objectReference: {fileID: 21300000, guid: 55530cfff57f03e459d71769ab32c800, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9578058aae292c4fb5964137dbde0b2, type: 3}
