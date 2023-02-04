@@ -1,31 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class MergedSlot : MonoBehaviour
 {
-    [SerializeField] int id;
-    [SerializeField] Image iconImg;
-    [SerializeField] Button useItemButton;
-    [SerializeField] TextMeshProUGUI itemCountTxt;
-
-    [SerializeField] List<Sprite> listIconSprite = new List<Sprite>();
+    [SerializeField] Image _iconImg;
+    [SerializeField] Button _useItemButton;
+    [SerializeField] TextMeshProUGUI _itemCountTxt;
+    [SerializeField] Sprite _refImg;
+    
     int itemCount = 0;
 
     private void Start()
     {
-        itemCountTxt.text = "x" + itemCount;
-        iconImg.sprite = listIconSprite[id];
+        _itemCountTxt.text = "x" + itemCount;
+        _iconImg.sprite = _refImg;
 
-        useItemButton.onClick.AddListener(() => UseItem());
+        _useItemButton.onClick.AddListener(UseItem);
+    }
+
+    private void OnDestroy()
+    {
+        _useItemButton.onClick.RemoveListener(UseItem);
     }
 
     public void UpdateSlot(int count)
     {
         itemCount += count;
-        itemCountTxt.text = "x" + itemCount;
+        _itemCountTxt.text = "x" + itemCount;
     }
 
     void UseItem()

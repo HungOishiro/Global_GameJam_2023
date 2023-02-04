@@ -13,16 +13,6 @@ public class ZombieManager : MonoBehaviour
 
     void SpawnZombie()
     {
-        int randZombie = Random.Range(0, 3);
-        switch (randZombie)
-        {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-        }
-        //PoolingManager.Instance.GetObject()
+        
     }
 }

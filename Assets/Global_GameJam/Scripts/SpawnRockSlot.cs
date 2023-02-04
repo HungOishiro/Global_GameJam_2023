@@ -50,9 +50,9 @@ public class SpawnRockSlot : MonoBehaviour
             }
         }
 
-        RockController rock = PoolingManager.Instance.GetObject(rockName, GameManager.Instance.root.transform.position).GetComponent<RockController>();
+        RockController rock = PoolingManager.Instance.GetObject(rockName, RootController.Instance.transform.position).GetComponent<RockController>();
         rock.SetupStart(this, rockId);
 
-        GameManager.Instance.UpdateRock(1);
+        MergeSlotPanel.Instance.UpdateRock(1);
     }
 }

@@ -168,15 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3dc444b1fab4f545a9dbd1fac1adc13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
-  iconImg: {fileID: 1559661207094566030}
-  useItemButton: {fileID: 7906526925061753543}
-  itemCountTxt: {fileID: 1140484947838301293}
-  listIconSprite:
-  - {fileID: 21300000, guid: 0f061b4bd0275bc4eb60f2af31e7375a, type: 3}
-  - {fileID: 21300000, guid: 9e9474494461bd048803b48e391ef0f6, type: 3}
-  - {fileID: 21300000, guid: 43ad51e043491b94d8f6c62d55ac5ede, type: 3}
-  - {fileID: 21300000, guid: 13e7e6fe43a8aa049bcd610bbc1f5ff8, type: 3}
+  _iconImg: {fileID: 1559661207094566030}
+  _useItemButton: {fileID: 7906526925061753543}
+  _itemCountTxt: {fileID: 1140484947838301293}
+  _refImg: {fileID: -261367454, guid: d41f292a117e864429bf839478ef9e0a, type: 3}
 --- !u!114 &7906526925061753543
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -99,7 +99,7 @@ public class RockController : MonoBehaviour
             });
             transform.DOScale(0, .2f).SetEase(Ease.Linear);
         });
-        GameManager.Instance.UpdateRock(-2);
+        MergeSlotPanel.Instance.UpdateRock(-2);
     }
 
     public void MergeSuccess(RockController target)

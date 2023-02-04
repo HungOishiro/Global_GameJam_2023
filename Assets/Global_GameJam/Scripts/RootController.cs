@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RootController : MonoBehaviour
+public class RootController : SingletonMonoBehaviour<RootController>
 {
     [SerializeField] Transform rockSpawnPosParent;
-    List<SpawnRockSlot> listSpawnPos = new List<SpawnRockSlot>();
+    List<SpawnRockSlot> _listSpawnPos = new List<SpawnRockSlot>();
 
     private void Start()
     {
-        for (int i = 0; i < GameManager.Instance.rockSpawnPosParent.childCount; i++)
+        for (int i = 0; i < MergeSlotPanel.Instance._rockSpawnPos.Count; i++)
         {
-            listSpawnPos.Add(GameManager.Instance.rockSpawnPosParent.GetChild(i).GetComponent<SpawnRockSlot>());
+            _listSpawnPos.Add(MergeSlotPanel.Instance._rockSpawnPos[i].GetComponent<SpawnRockSlot>());
         }
     }
 
@@ -22,10 +22,13 @@ public class RootController : MonoBehaviour
 
     void SpawnRock()
     {
-        if (!GameManager.Instance.CanSpawnRock()) return;
-        int rockRand = Random.Range(0, listSpawnPos.Count);
-        if (!listSpawnPos[rockRand].HaveRock)
-            listSpawnPos[rockRand].SpawnRock(RandomRock());
+        if (!MergeSlotPanel.Instance.CanSpawnRock())
+            return;
+        
+        int rockRand = Random.Range(0, _listSpawnPos.Count);
+        
+        if (!_listSpawnPos[rockRand].HaveRock)
+            _listSpawnPos[rockRand].SpawnRock(RandomRock());
         else
             SpawnRock();
     }
