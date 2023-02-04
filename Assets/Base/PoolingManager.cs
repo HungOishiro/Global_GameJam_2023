@@ -5,7 +5,11 @@ using UnityEngine;
 [System.Serializable]
 public enum NamePrefabPool
 {
-    None
+    None,
+    RockNormal,
+    RockFire,
+    RockFreeze,
+    RockStun
 }
 [System.Serializable]
 public enum PrefabPoolType
