@@ -48,7 +48,6 @@ public class GameplayController : BaseManager<GameplayController>
     private void OnDestroy()
     {
         SceneController.Instance.OnChangeScene -= OnLoadScene;
-
     }
 
     private void SetEvent()
