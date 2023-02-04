@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f061b4bd0275bc4eb60f2af31e7375a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34f0c536b6b9ef34297bc183ead0d1d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
   _iconImg: {fileID: 1559661207094566030}
   _useItemButton: {fileID: 7906526925061753543}
   _itemCountTxt: {fileID: 1140484947838301293}
-  _refImg: {fileID: -261367454, guid: d41f292a117e864429bf839478ef9e0a, type: 3}
+  _refImg: {fileID: 21300000, guid: 34f0c536b6b9ef34297bc183ead0d1d1, type: 3}
 --- !u!114 &7906526925061753543
 MonoBehaviour:
   m_ObjectHideFlags: 0
