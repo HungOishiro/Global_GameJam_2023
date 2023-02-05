@@ -27,7 +27,7 @@ public class ZombieManager : MonoBehaviour
 
     private void Start()
     {
-        WaveStart(7,15);
+        WaveStart(15,30);
     }
 
     public void WaveStart(int minSpawn, int maxSpawn)

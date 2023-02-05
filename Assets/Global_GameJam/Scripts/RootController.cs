@@ -6,6 +6,7 @@ public class RootController : SingletonMonoBehaviour<RootController>
 {
     [SerializeField] Transform rockSpawnPosParent;
     List<SpawnRockSlot> _listSpawnPos = new List<SpawnRockSlot>();
+    int health = 10;
 
     private void Start()
     {
@@ -40,5 +41,25 @@ public class RootController : SingletonMonoBehaviour<RootController>
             return 0;
         else
             return 1;
+    }
+
+    IEnumerator Hit()
+    {
+        yield return new WaitForSeconds(1f);
+        health--;
+        if (health > 0)
+            StartCoroutine("Hit");
+        else
+        {
+            PlayerManager.Instance.EndGame();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            StartCoroutine("Hit");
+        }
     }
 }

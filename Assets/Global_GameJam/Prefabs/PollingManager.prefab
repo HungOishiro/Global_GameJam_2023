@@ -66,3 +66,28 @@ MonoBehaviour:
     namePrefab: 4
     prefab: {fileID: 1365461396686277819, guid: 47daf1813178212489dde4c588bf2101, type: 3}
     countStartSpawn: 0
+  - name: NormalBoom
+    prefabType: 1
+    namePrefab: 8
+    prefab: {fileID: 1854057713431630207, guid: 08458ed44b65ccd4982d7f3ac5389bce, type: 3}
+    countStartSpawn: 0
+  - name: FireBoom
+    prefabType: 1
+    namePrefab: 9
+    prefab: {fileID: 5139163167312257631, guid: a7b1165be0d2c95499dd6dbe4b792d33, type: 3}
+    countStartSpawn: 0
+  - name: FreezeBoom
+    prefabType: 1
+    namePrefab: 10
+    prefab: {fileID: 6246437665081162071, guid: 5b6be3df918fef1409453210c05ca85f, type: 3}
+    countStartSpawn: 0
+  - name: StunBoom
+    prefabType: 1
+    namePrefab: 11
+    prefab: {fileID: 8866668910472713809, guid: 8c8299834a577a44da04c4f35543ed5c, type: 3}
+    countStartSpawn: 0
+  - name: Blood
+    prefabType: 1
+    namePrefab: 12
+    prefab: {fileID: 70743410454104515, guid: 28319362d09316e41b3c57d2d4187311, type: 3}
+    countStartSpawn: 0

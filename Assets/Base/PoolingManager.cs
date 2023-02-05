@@ -12,7 +12,12 @@ public enum NamePrefabPool
     RockStun,
     ZombieNormal,
     ZombieBig,
-    ZombieSpeed
+    ZombieSpeed,
+    NormalBoom,
+    FireBoom,
+    FreezeBoom,
+    StunBoom,
+    Blood
 }
 [System.Serializable]
 public enum PrefabPoolType
